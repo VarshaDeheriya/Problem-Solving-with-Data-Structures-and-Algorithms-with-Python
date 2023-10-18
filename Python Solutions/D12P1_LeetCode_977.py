@@ -1,6 +1,7 @@
-# Python3 code coming soon
 class Solution:
-    def sortedSquares(self, A: List[int]) -> List[int]:
-        return sorted([x*x for x in A])
-#The sorted() function sorts the elements of a given iterable in a specific order (either ascending or descending) 
-#and returns the sorted iterable as a list.
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        list1 = []
+        for i in nums:
+            list1.append(i**2)
+            list1.sort()
+        return list1
